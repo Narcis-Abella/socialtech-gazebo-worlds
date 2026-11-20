@@ -1,0 +1,26 @@
+INSTRUCCIONES RÁPIDAS — Casa de José en Gazebo (simulación)
+
+1) Necesitas Ubuntu 24.04 con Gazebo Harmonic (si tienes ROS 2 Jazzy con ros-gz, ya lo tienes).
+   Comprueba en una terminal:   gz sim --version     (debe decir 8.x)
+   Si no lo tienes, mira el apartado "Requisitos" del README.md.
+
+2) Descarga el escenario y entra en la carpeta:
+      git clone https://github.com/alexllambrichcastells/socialtech-gazebo-worlds.git
+      cd socialtech-gazebo-worlds
+   (si no tienes git:  sudo apt-get install -y git)
+
+3) Abre el mundo:
+      ./abrir_mundo.sh
+   Si la ventana sale negra o falla (por ejemplo en una máquina virtual):
+      LIBGL_ALWAYS_SOFTWARE=1 ./abrir_mundo.sh
+
+4) Deberías ver la casa en 3D: muros grises, los muebles de los baños y dos bloques
+   naranjas en el comedor, que son OBJETOS DE PRUEBA inventados (no existen en tu casa).
+
+5) Cuéntanos:
+   - si se abrió y cuánto tardó;
+   - una captura de pantalla;
+   - si ves algo mal colocado o con medidas raras (las medidas son PROVISIONALES:
+     nos faltan algunas cotas reales tuyas).
+
+Para cerrar: cierra la ventana de Gazebo o pulsa Ctrl+C en la terminal.

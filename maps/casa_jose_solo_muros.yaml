@@ -1,0 +1,7 @@
+image: casa_jose_solo_muros.pgm
+mode: trinary
+resolution: 0.01
+origin: [-0.1132, -0.0612, 0.0]
+negate: 0
+occupied_thresh: 0.65
+free_thresh: 0.196

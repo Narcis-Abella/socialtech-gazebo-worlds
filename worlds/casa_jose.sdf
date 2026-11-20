@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- SocialTech - Casa de José (simulación). Geometría PROVISIONAL, sin validar con medidas reales. Ver README.md. -->
+<sdf version="1.9">
+  <world name="casa_jose">
+    <physics name="1ms" type="ignored"><max_step_size>0.001</max_step_size><real_time_factor>1.0</real_time_factor></physics>
+    <plugin filename="gz-sim-physics-system" name="gz::sim::systems::Physics"/>
+    <plugin filename="gz-sim-scene-broadcaster-system" name="gz::sim::systems::SceneBroadcaster"/>
+    <plugin filename="gz-sim-user-commands-system" name="gz::sim::systems::UserCommands"/>
+    <plugin filename="gz-sim-sensors-system" name="gz::sim::systems::Sensors"><render_engine>ogre2</render_engine></plugin>
+    <plugin filename="gz-sim-imu-system" name="gz::sim::systems::Imu"/>
+    <light type="directional" name="sun"><pose>0 0 10 0 0 0</pose><direction>-0.5 0.1 -0.9</direction><diffuse>1 1 1 1</diffuse></light>
+    <model name="suelo"><static>true</static><pose>7.8168 7.0488 0 0 0 0</pose><link name="l">
+      <collision name="c"><geometry><plane><normal>0 0 1</normal><size>19.86 18.22</size></plane></geometry></collision>
+      <visual name="v"><geometry><plane><normal>0 0 1</normal><size>19.86 18.22</size></plane></geometry>
+        <material><ambient>0.55 0.55 0.58 1</ambient><diffuse>0.55 0.55 0.58 1</diffuse></material></visual></link></model>
+    <include><name>muros</name><uri>model://casa_jose_muros</uri></include>
+    <include><name>banera</name><uri>model://banera</uri><pose>4.7135 10.4427 0 0 0 0.000000</pose></include>
+    <include><name>lavabo</name><uri>model://lavabo</uri><pose>4.0885 9.1146 0 0 0 0.000000</pose></include>
+    <include><name>inodoro</name><uri>model://inodoro</uri><pose>5.3385 8.4462 0 0 0 0.000000</pose></include>
+    <include><name>bide</name><uri>model://bide</uri><pose>6.1285 8.4462 0 0 0 0.000000</pose></include>
+    <include><name>bloque_cm</name><uri>model://bloque_cm</uri><pose>5.3646 4.5747 0 0 0 0.000000</pose></include>
+    <include><name>SINT_cnc_prueba_1</name><uri>model://SINT_cnc_prueba_1</uri><pose>13.5417 11.8056 0 0 0 0.000000</pose></include>
+    <include><name>SINT_cnc_prueba_2</name><uri>model://SINT_cnc_prueba_2</uri><pose>13.0208 7.6389 0 0 0 0.000000</pose></include>
+  </world>
+</sdf>

@@ -1,0 +1,52 @@
+# Zonas por las que un robot NO debe pasar (coordenadas del mapa/mundo, metros). Geometría PROVISIONAL.
+frame: map (= world de Gazebo)
+zonas:
+- nombre: ascensor
+  motivo: ascensor
+  poligono_m:
+  - - 5.017
+    - 1.927
+  - - 7.361
+    - 1.927
+  - - 7.361
+    - 3.681
+  - - 5.017
+    - 3.681
+- nombre: escalera
+  motivo: escaleras (incluye su acceso desde el vestíbulo)
+  poligono_m:
+  - - 1.649
+    - 0.139
+  - - 5.035
+    - 0.139
+  - - 5.035
+    - 5.434
+  - - 1.649
+    - 5.434
+- nombre: puerta_A_vecina
+  motivo: 'puerta A: vivienda vecina (incluye lo que hay detrás, fuera del plano)'
+  poligono_m:
+  - - 8.663
+    - 0.069
+  - - 15.538
+    - 0.069
+  - - 15.538
+    - 3.49
+  - - 8.663
+    - 3.49
+- nombre: patio
+  motivo: patio (sin puerta; fuera de la zona navegable)
+  poligono_m:
+  - - 0.417
+    - 5.469
+  - - 7.083
+    - 5.469
+  - - 7.083
+    - 7.917
+  - - 0.417
+    - 7.917
+pose_inicio_sugerida:
+  x: 6.5972
+  y: 1.1632
+  yaw_deg: 0.0
+  nota: vestíbulo, frente a la puerta 4 (entrada)
