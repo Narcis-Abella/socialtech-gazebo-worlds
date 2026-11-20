@@ -126,4 +126,4 @@ Todo el contenido (mundo, modelos, mallas y mapas) lo ha **generado el equipo So
 **No incluye modelos ni texturas de terceros.** La malla de muros se generó con la herramienta pública *map2sdf* (Apache-2.0; su cabecera STL lo indica); el paquete no contiene su código. Representa una vivienda particular con **geometría aproximada**: se publica solo para pruebas de simulación; no es un plano de la vivienda.
 Publicado con el consentimiento del propietario de la vivienda.
 
-**Licencia: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es)** (ver `LICENSE`). Cita: *"Casa de José — escenario de simulación, Equipo SocialTech"*.
+**Licencia: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/deed.es)** (texto legal en `LICENSE`; créditos y alcance en `NOTICE`). Cita: *"Casa de José — escenario de simulación, Equipo SocialTech"*.

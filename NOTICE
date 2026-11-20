@@ -1,0 +1,25 @@
+SocialTech Gazebo Worlds — Escenario Casa de José (mundo 3D de Gazebo + mapas 2D)
+Copyright (c) 2026 Equipo SocialTech (Alex Llambrich)
+
+Licencia: Creative Commons Atribución 4.0 Internacional (CC BY 4.0). Texto legal completo en LICENSE.
+Resumen en español: https://creativecommons.org/licenses/by/4.0/deed.es
+
+Alcance
+  Cubre todo el contenido de este repositorio: mundo (worlds/), modelos y malla (models/), mapas y zonas (maps/),
+  configuración de RViz2 (rviz/), launch (launch/), scripts (abrir_mundo.sh, ver_mapa.sh), archivos del paquete
+  (package.xml, CMakeLists.txt, hooks/) y documentación (README.md, INSTRUCCIONES_JOSE.txt).
+
+Atribución
+  Puedes compartir y adaptar este material para cualquier fin, siempre que cites la autoría ("Equipo SocialTech"),
+  enlaces a la licencia e indiques si has hecho cambios.
+  Cita sugerida: "Casa de José — escenario de simulación, Equipo SocialTech".
+
+Origen
+  Todo el contenido lo ha generado el equipo SocialTech a partir del plano de la vivienda. No incluye modelos ni
+  texturas de terceros. La malla de muros (models/casa_jose_muros) se generó con la herramienta pública map2sdf
+  (Apache-2.0; su cabecera STL lo indica); este repositorio no contiene su código.
+  La vivienda es particular y se publica con el consentimiento de su propietario, solo para pruebas de simulación.
+
+Aviso
+  La geometría es APROXIMADA y no está validada con medidas reales; no es un plano de la vivienda.
+  Se ofrece "tal cual", sin garantías (ver la sección 5 de LICENSE).
